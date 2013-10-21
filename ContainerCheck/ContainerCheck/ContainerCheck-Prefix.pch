@@ -1,0 +1,31 @@
+//
+// Prefix header for all source files of the 'ContainerCheck' target in the 'ContainerCheck' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "Dialog.h"
+#import "Colorful.h"
+#import "SharedModel.h"
+
+#endif
+
+#define SCREEN_HEIGHT       [[UIScreen mainScreen] bounds].size.height
+#define SCREEN_WIDTH        [[UIScreen mainScreen] bounds].size.width
+
+//真实使用服务器IP地址setting处修改
+//#define IP          [[NSUserDefaults standardUserDefaults] stringForKey:@"IP"]
+//测试IP地址
+#define IP          @"10.192.111.70"
+
+
+
+
+//endif
